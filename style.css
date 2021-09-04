@@ -115,3 +115,15 @@ body{
     font-size: 18px;
     text-align: center;
 }
+
+.mytext{
+    top:20px;
+    font-size: 72px;
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 20px #535252;
+}
