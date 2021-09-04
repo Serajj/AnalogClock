@@ -4,6 +4,9 @@ const $hr = $('#hr');
 const $mn = $('#mn');
 const $sc = $('#sc');
 const $dc = $('#dclock');
+const $body = $('body');
+
+let colors=['violet','indigo','blue','green','yellow','orange','red']
 
 
 setInterval(()=>{
@@ -29,8 +32,11 @@ setInterval(()=>{
    obj.play(); 
 
    let sec= day.getSeconds() < 10 ? '0'+day.getSeconds() : day.getSeconds();
+   let c= '#'+(hh+mm+ss);
 
 
    $dc.html('<p class="dtext">'+day.getHours()+' : '+day.getMinutes()+' : '+sec +'</p>');
+    
+   $body.css('background',c);
 
 },1000)
