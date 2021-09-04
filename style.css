@@ -127,3 +127,10 @@ body{
     text-align: center;
     text-shadow: 2px 20px #535252;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .mytext{
+        font-size: 36px;
+    }
+  }
